@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <title>Application Form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1>Welcome!</h1>
+    <h2>We are happy that you have trusted us to help you with your
+        job search.  Please fill in all of the fields below.  We will then 
+        contact you with matching job opportunities.</h2><br><br>
+
+    <form action="/application-success" method="POST" class="form-box">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="column-xs-4">
+
+                    <!--Input Starts-->
+                    <label for="first-name">First Name:</label>
+                    <input id="first-name" type="text" name="first-name" placeholder="first name" required>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <label for="last-name">Last Name:</label>
+                    <input id="last-name" type="text/css" name="last-name" placeholder="last name" class="bold"required><br><br>
+                </div>
+            </div>
+
+            <!--Contact Information and Salary-->
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label for="email">Email:</label>
+            <input id="email" type="text" name="email" placeholder="email" required>&nbsp
+            <label for="phone-number">Phone Number:</label>
+            <input id="phone-number" type="text" name="phone-number" placeholder="(415)867-5309"required><br><br>
+            <label for="salary-requirement">Salary Requirement:</label>
+            <input id="salary-requirement" type="text" name="salary-requirement" placeholder="$1.00" required><br><br>
+            
+            <!--Dropdown Job Menu-->
+            <label for="preferred-title">Preferred Title:</label>
+            <select id="preferred-title" name="preferred-title">
+            <option value="Front End">Software Engineer - Front End</option>
+            <option value="Back End">Software Engineer - Back End</option>
+            <option value="Full Stack">Software Engineer - Full Stack</option>
+            <option value="QA Engineer">QA Engineer</option>
+            <option value="Product Manager">Product Manager</option>
+        </select><br><br>
+        <!--End Dropdown-->
+        <input type="submit" name="submit" value="submit">
+    </div>
+    </form>
+</body>
+</html>
